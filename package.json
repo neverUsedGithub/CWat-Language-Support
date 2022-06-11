@@ -1,0 +1,35 @@
+{
+    "name": "cwat-language-support",
+    "displayName": "CWat Language Support",
+    "description": "Support for the CWat programming language.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.68.0"
+    },
+    "author": {
+        "name": "neverUsedDiscord#1120"
+    },
+    "icon": "icons/icon.png",
+    "categories": [
+        "Programming Languages"
+    ],
+    "publisher": "The CWat Programming Language",
+    "iconDefinitions": {
+        "_folder_dark": {
+            "iconPath": "icons/"
+        }
+    },
+    "contributes": {
+        "languages": [{
+            "id": "cwat",
+            "aliases": ["CWat", "cwat"],
+            "extensions": [".dime"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cwat",
+            "scopeName": "source.cwat",
+            "path": "./syntaxes/cwat.tmLanguage.json"
+        }]
+    }
+}
