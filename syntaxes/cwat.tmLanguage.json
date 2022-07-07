@@ -346,7 +346,7 @@
                 {
                     "comment": "storage keywords",
                     "name": "keyword.other.cwat storage.type.cwat",
-                    "match": "\\b(extern|export|let)\\b"
+                    "match": "\\b(extern|export|let|const|this)\\b"
                 },
                 {
                     "comment": "other keywords",
