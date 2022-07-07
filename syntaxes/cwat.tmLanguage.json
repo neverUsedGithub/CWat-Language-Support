@@ -306,6 +306,12 @@
                     },
                     "patterns": [
                         {
+                          "include": "#types"
+                        },
+                        {
+                          "include": "#constants"
+                        },
+                        {
                             "include": "#block-comments"
                         },
                         {
@@ -322,9 +328,6 @@
                         },
                         {
                             "include": "#strings"
-                        },
-                        {
-                            "include": "#types"
                         },
                         {
                             "include": "#variables"
@@ -699,7 +702,7 @@
                 {
                     "comment": "variables",
                     "name": "variable.other.cwat",
-                    "match": "\\b(?<!(?<!\\.)\\.)(?:r#(?!(crate|[Ss]elf|super)))?[a-z0-9_]+\\b"
+                    "match": "\\b[a-zA-Z_][a-zA-Z_0-9]*\\b"
                 }
             ]
         }
